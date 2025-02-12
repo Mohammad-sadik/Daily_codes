@@ -8,5 +8,4 @@ max_val=a
 for i in list_a[1:]:
     if max_val< i:
         max_val=i
-
 print(f"The given values {a}, {b}, {c}. The largest among three numbers is {max_val}.")
