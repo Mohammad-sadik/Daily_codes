@@ -6,6 +6,5 @@ if char.isalpha():
         print(f"The given char is {char}, & it is a vowel")
     else:
         print(f"The given char is {char}, & it is a consonant")
-
 else:
     print(f"The given char is {char} is not a char")
