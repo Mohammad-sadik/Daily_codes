@@ -2,6 +2,6 @@ arr = input("Enter array: ").split()
 arr = [int(i) for i in arr]
 # arr.sort()
 # print(arr)
-"""__________"""
+"""_________"""
 arr=sorted(arr)
 print(arr)
