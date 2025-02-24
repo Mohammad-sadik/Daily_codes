@@ -11,7 +11,6 @@ def gcd(a, b):
         return a
     return gcd(b, a % b)
 
-# Example usage:
 fst_value = int(input("Enter first value: "))
 sec_value = int(input("Enter second value: "))
 
