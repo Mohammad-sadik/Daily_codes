@@ -1,4 +1,3 @@
-
 word = input("Enter word: ")
 vowels = ["a","e","i","o","u"]
 new_word = ""
