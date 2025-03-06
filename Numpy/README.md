@@ -106,5 +106,3 @@ NumPy is a **superpower for numbers**! With it, you can:
 - ➕➖✖➗ Use **powerful math functions**
 
 Have fun playing with numbers using NumPy! 🎉🐍🚀
-
- 
