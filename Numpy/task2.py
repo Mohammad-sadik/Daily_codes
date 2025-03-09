@@ -23,3 +23,5 @@ arr = np.array([10, 20, 30, 40, 50])
 
 💡 Hint: Remember, indexing starts from 0!
 """
+arr = np.array([10, 20, 30, 40, 50])
+print(f"Print the third number in the array: {arr[2]}")
