@@ -25,3 +25,11 @@ arr = np.array([10, 20, 30, 40, 50])
 """
 arr = np.array([10, 20, 30, 40, 50])
 print(f"Print the third number in the array: {arr[2]}")
+'''Exercise 4: Slice the Array
+Use the same array:
+
+arr = np.array([10, 20, 30, 40, 50])
+👉 Task: Print numbers from 20 to 40 using slicing.
+💡 Hint: Use arr[start:end].'''
+arr = np.array([10, 20, 30, 40, 50])
+print(f"Print numbers from 20 to 40 using slicing: {arr[1:4]}")
