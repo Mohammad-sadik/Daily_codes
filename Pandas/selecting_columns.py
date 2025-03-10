@@ -9,4 +9,6 @@ print(df["Name"], "\n") # Get only the "Name" column
 
 print(df[["Name", "Age"]], "\n")
 
-print(df[["Name", "Age", "City"]])
+print(df[["Name", "Age", "City"]], "\n")
+# Filter Data (e.g., People older than 30)
+print(df[df['Age'] > 30])
