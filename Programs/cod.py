@@ -1,7 +1,6 @@
-
 n = ["Ganesh", "Raj", "Mahi"]
 h = [180,165,170]
 
-h.sort(reverse=True)
-
-print(h)
+new = {j : i for i, j in zip(n,h)}
+op ={k :new.get(k) for k in sorted(h)}
+print(op)
