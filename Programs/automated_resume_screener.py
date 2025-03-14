@@ -30,7 +30,6 @@ def match_resume_with_job(resume_text, job_desc):
     similarity = cosine_similarity(vectors)[0][1]
     return similarity
 
-
 pdf_path = input("Enter full path of Resume: ")
 resume_text = extract_text_from_pdf(pdf_path)
 job_description = "Proven understanding of a software development language (e.g. C# Java) or scripting language (e.g. Python JavaScript) and of software development methodology. Knowledge of web services and hands-on experience with web service testing tools such as SoapUI. Hands on experience with Microsoft SQL. Understanding of software development methodologyand a strong understanding of backend (non UI) testing."
