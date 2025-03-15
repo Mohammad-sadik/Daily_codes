@@ -1,0 +1,31 @@
+Why don’t programmers like nature?
+Because it has too many bugs!
+Why did the SQL query break up with the database?
+It found too many relations!
+
+Why do Python programmers prefer dark mode?
+Because light attracts bugs!
+
+Why don’t skeletons fight each other?
+They don’t have the guts!
+
+Why was the JavaScript developer sad?
+Because he didn’t ‘null’ his feelings properly!
+
+What’s a computer’s favorite snack?
+Microchips!
+
+Why did the Python programmer go broke?
+Because he kept using pass!
+
+Why do programmers hate cooking?
+They don’t like dealing with exceptions!
+
+How do you comfort a JavaScript bug?
+You console it! (with console.log())
+
+Why was the Excel sheet so good at math?
+Because it had formulas for everything!
+
+Why did the developer go to therapy?
+Too many unhandled exceptions in life!
