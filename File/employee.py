@@ -51,6 +51,49 @@ def search_employee():
                 return
             print("❌ Employee Not Found!\n")
             return
+def update_employee():
+    emp_id = input("Enter Employee ID to update: ")
+    undated_records = []
+    found = False
+
+    with open(f_name, 'r') as file:
+        emply = file.readlines()
+        for emp in emply:
+            emp_data = emp.strip()
+            emp_data = emp_data.split(',')
+            if emp_data[0] == emp_id:
+                print("\n✅ Employee Found! Enter new details.")
+                emp_data[1] = input("Enter New Name: ")
+                emp_data[2] = input("Enter New Age: ")
+                emp_data[3] = input("Enter New Department: ")
+                emp_data[4] = input("Enter New Salary: ")
+                found = True
+            undated_records.append(",".join(emp_data)+ "\n")
+    with open(f_name, 'w') as file:
+        file.writelines(undated_records)
+    if found:
+        print("Employee details updated successfully!\n")
+    else:
+        print("Employee Not Found!\n")
+
+def delete_employee():
+    emp_id = input("Enter Employee ID to update: ")
+    undated_records = []
+    found = False
+
+    with open(f_name, 'r') as file:
+        emply = file.readlines()
+        for emp in emply:
+            emp_data = emp.strip()
+            emp_data = emp_data.split(',')
+            if emp_data[0] != emp_id:
+                undated_records.append(emp)
+    with open(f_name, 'w') as file:
+        file.writelines(undated_records)
+    if found:
+        print("Employee deleted successfully!\n")
+    else:
+        print("Employee Not Found!\n")
 
 
 # with open(f_name,'w') as file:
@@ -72,12 +115,12 @@ while True:
         view_employees()
     elif choice == 3:
         search_employee()
-    # elif choice == 4:
-    #     update_employee()
-    # elif choice == 5:
-    #     delete_employee()
-    # elif choice == 6:
-    #     print("🔴 Exiting Program... Goodbye!")
-    #     break
-    # else:
-    #     print("⚠ Invalid Choice! Please try again.\n")
+    elif choice == 4:
+        update_employee()
+    elif choice == 5:
+        delete_employee()
+    elif choice == 6:
+        print("🔴 Exiting Program... Goodbye!")
+        break
+    else:
+        print("⚠ Invalid Choice! Please try again.\n")
