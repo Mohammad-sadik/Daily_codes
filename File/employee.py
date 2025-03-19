@@ -35,6 +35,23 @@ def view_employees():
     except FileNotFoundError:
         print("No employee records found! The file does not exist.\n")
 
+def search_employee():
+    emp_id = input("Enter Employee ID to search: ")
+
+    with open(f_name, 'r') as file:
+        emply = file.readlines()
+
+        for emp in emply:
+            emp_data = emp.strip()
+            emp_data = emp.split(',')
+            if emp_data[0] == emp_id:
+                print("\n✅ Employee Found!")
+                print(
+                    f"ID: {emp_data[0]}, Name: {emp_data[1]}, Age: {emp_data[2]}, Department: {emp_data[3]}, Salary: {emp_data[4]}\n")
+                return
+            print("❌ Employee Not Found!\n")
+            return
+
 
 # with open(f_name,'w') as file:
 #     file.write('emp_id,name,age,department,salary')
@@ -53,8 +70,8 @@ while True:
         add_employee()
     elif choice == 2:
         view_employees()
-    # elif choice == 3:
-    #     search_employee()
+    elif choice == 3:
+        search_employee()
     # elif choice == 4:
     #     update_employee()
     # elif choice == 5:
