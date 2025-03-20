@@ -1,4 +1,4 @@
-f_name = "employee.text"
+f_name = "employee.txt"
 def add_employee():
     with open(f_name, 'a') as file:
         emp_id = input("Enter Employee ID: ")
