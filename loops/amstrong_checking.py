@@ -11,5 +11,7 @@ def Amstrong_checking(num):
         return f"{orginal} is an Armstrong number."
     else:
         return f"{orginal} is an Not Armstrong number."
-num = int(input("Enter number : "))
-print(Amstrong_checking(num))
+
+if __name__ == '__main__':
+    num = int(input("Enter number : "))
+    print(Amstrong_checking(num))
