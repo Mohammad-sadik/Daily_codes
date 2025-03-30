@@ -10,5 +10,6 @@ def convert_upper_case():
     except Exception as e:
         print(f"Error: {e}")
     pass
+    
 if __name__ == "__main__":
     convert_upper_case()
