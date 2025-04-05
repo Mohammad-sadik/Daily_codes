@@ -71,3 +71,28 @@ while len(arr)< 100:
     i+=1
 print("First 100 prime numbers:", arr)
 print("Sum:", sum(arr))
+"""**************************************************************************"""
+''' Generate Multiples of a Number (Given Length)'''
+num = int(input("Enter number: "))
+length = int(input("Enter Length: "))
+for i in range(1, length+1):
+    print(f"{num} * {i} = {num*i}")
+
+"""**************************************************************************"""
+'''FizzBuzz'''
+def fizzBuzz(num):
+    if num%3 == 0  and num%5 == 0:
+        print("FizzBuzz")
+    elif num%3 == 0:
+        print('Fizz')
+    elif num%5 == 0:
+        print('Buzz')
+    else:
+        print(num)
+fizzBuzz(15)
+"""**************************************************************************"""
+'''20. Repeat Each Character in a String'''
+def repeat(w):
+    return ''.join([k*2 for k in w])
+string = input("Enter a String: ")
+print(repeat(string))
