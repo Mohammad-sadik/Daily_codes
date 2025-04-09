@@ -96,3 +96,4 @@ def repeat(w):
     return ''.join([k*2 for k in w])
 string = input("Enter a String: ")
 print(repeat(string))
+"""**************************************************************************"""
